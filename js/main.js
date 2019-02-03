@@ -1,8 +1,12 @@
-function myFunction() {
-document.getElementById("demo").innerHTML = "Hello World broja 7";
+function myFunction7() {
+document.getElementById("demo7").innerHTML = "7";
    }
       
         
 function myFunction8() {
-document.getElementById("demo").innerHTML = "Hello World 888";
+document.getElementById("demo8").innerHTML = "8";
    }
+
+function Function_mnozenje () {
+document.getElementById("mnozenje").innerHTML = Math.pow(8,7);
+    }
