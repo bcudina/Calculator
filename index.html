@@ -2,6 +2,22 @@
 <html>
 <head>
     
+    <script>
+        
+        function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+   }
+      
+        
+        function myFunction8() {
+  document.getElementById("demo").innerHTML = "Hello World 888";
+   }
+
+    
+    
+    
+    </script>
+    
     
     <title>Digitron</title>
     
@@ -16,14 +32,23 @@
     
 <div id="wrapp">
     
-    <h1 id="naslov">online Digitron</h1>
+    <h1 id="naslov">onlineDigitron</h1>
     
+    
+     
     <div id="container">
         
-        <div class="brojke">7</div>
-        <div class="brojke">8</div>
+        <button class="brojke" onclick="myFunction()">7</button>
+        
+        
+        
+            
+         <button class="brojke" onclick="myFunction8()">8</button>
+        
         <div class="brojke">9</div>
+       
         <div class="brojke">+</div>
+       
         <div class="brojke">4</div>
         <div class="brojke">5</div>
         <div class="brojke">6</div>
@@ -32,8 +57,12 @@
         <div class="brojke">2</div>
         <div class="brojke">3</div>
         <div class="brojke">=</div>
-    
+        <button class="brojke" id="7" onclick="myFunction()">7</button>
+        
+   
     </div>
+    
+    <p id="demo"></p>
     
 </div>
     
