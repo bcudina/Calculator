@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+<div id = "broj_1">
+=======
+html,body {
+    margin:0;
+    padding: 0;    
+}
+
+
+
+#naslov {
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+.brojke {
+    width:20px;
+    height:30px;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+
+.brojke_2 {
+    width:20px;
+    height:30px;
+    border: 1px solid black;
+    float: right;
+    
+    
+}
+>>>>>>> 30534fec4a47d3a6c1a85971b4bacb332b2c574b
