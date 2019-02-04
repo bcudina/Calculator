@@ -8,27 +8,65 @@ html,body {
     margin: auto;
     text-align: center;
     border: 1px solid black;
-    
 }
+
 
 #container {
     width: 400px;
-    height: 400px;
+    height: 600px;
     margin: 10px auto;
-    border: 1px solid black;
-    
+    border: 2px solid black;
+    border-radius: 7px 7px 0 0;
+}
+
+
+#ekran {
+    width: 380px;
+    height: 80px;
+    color: aliceblue;
+    background-color:cadetblue;   
+    text-align: right;
+    font-size: 90px;
+    overflow: hidden;
+    white-space: normal;
+    border-radius: 7px 7px 0 0;
+    padding: 10px;
     
 }
 
-.brojke {
+.tipke_brojke {
     width:100px;
     height:100px;
     box-sizing: border-box;
     border: 1px solid black;
     float:left;
     font-size: 3em;
-    
+    text-align: center;
+    background-color: silver;
+    cursor: pointer;
+    padding-top:25px;   
+}
+
+
+.tipke_opr {
+    width:100px;
+    height:100px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    float:left;
+    font-size: 3em;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+    padding-top:25px;   
+}
+
+
+.tipke_brojke.duple {
+    width: 200px;   
 }
 
 
 
+
+ 
