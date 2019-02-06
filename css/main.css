@@ -47,6 +47,10 @@ html,body {
     padding-top:25px;   
 }
 
+.tipke_brojke:hover {
+    background-color: orange;    
+}
+
 
 .tipke_opr {
     width:100px;
