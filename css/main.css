@@ -47,12 +47,12 @@ html,body {
     padding-top:25px;   
 }
 
-.tipke_brojke:hover {
+.tipke_brojke:hover {           /* tipke mjenjaju boju kad je mouseover */
     background-color: orange;    
 }
 
 
-.tipke_opr {
+.tipke_operater {
     width:100px;
     height:100px;
     box-sizing: border-box;

@@ -24,8 +24,8 @@ var plusBtn = document.getElementById('calc-plus');
 
 var displayValElement = document.getElementById("ekran"); /*ekran */
 
-var calcNumBtns = document.getElementsByClassName("tipke_brojke");  /*zove class tipki*/
-var calcOperBtns = document.getElementsByClassName("tipke_opr");
+var calcTipkeBrojke = document.getElementsByClassName("tipke_brojke");  /*zove class tipki*/
+var calcOperatorTipke = document.getElementsByClassName("tipke_opr");
     
 /*-------ima------------------------*/
 
@@ -33,35 +33,29 @@ var displayVal = "0";   /*pocetni display uvijek pokazuje 0 */
 var pendingVal;         /* 5 + 3, samo ce 3 biti prikazano, zadnja tipka*/
 var evalStringArray = []; /*pretvara u stringove i automatski zbraja*/
     
-/*-------------------------------*/
-
+/*definiramo "numberClick", pocetni disply uvijek je 0*/
 var numberClick = (num) => {
     if(displayVal === "0")
         displayVal = " ";
     displayVal += num;
     displayValElement.innerText = displayVal;
 };
+
+
     /*kada kliknemo na broj */
+
+/*kada kliknemo na operater */
 var updateDisplayVal = (clickObj) => {
     let btnText = clickObj.target.innerText;
     numberClick(btnText);
 };
     
-
-
-/*------ima-------------------------*/
-    
-
-/*kada kliknemo na neki broj zove funkciju "updateDisplayVal"*/
-for (let i=0; i < calcNumBtns.length; i++) {
-    calcNumBtns[i].addEventListener("click", updateDisplayVal, false);
-}
-
-    /*
-for (let i=0; i < calcOperBtns.length; i++) {
-    calcOperBtns[i].addEventListener("click", performOperation, false);
-}
-    
-    */
-
-
+/*kada kliknemo na neki broj u class "tipke_brojke", Listener
+zove funkciju "updateDisplayVal"*/
+/*pitanje je mora li var biti definiran prije ili moze poslije*/
+for (let i=0; i < calcTipkeBrojke.length; i++) {
+    calcTipkeBrojke[i].addEventListener("click", updateDisplayVal, false);
+    }
+for (let i=0; i< calcOperatorTipke.length; i++) {
+    calcOperatorTipke[i].addEventListener("click",updateDisplayVal, false);
+    }
