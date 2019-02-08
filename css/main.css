@@ -51,6 +51,10 @@ html,body {
     background-color: orange;    
 }
 
+.crveno {
+    color:red;      /*boja slova*/
+   }
+
 
 .tipke_operater {
     width:100px;
@@ -60,7 +64,7 @@ html,body {
     float:left;
     font-size: 3em;
     text-align: center;
-    background-color: orange;
+    background-color: orange; /*boja pozadine*/
     cursor: pointer;
     padding-top:25px;   
 }
