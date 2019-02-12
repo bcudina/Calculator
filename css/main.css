@@ -1,3 +1,20 @@
+
+/*nista pod ovim id-om ne moze biti oznaceno */
+#wrapp {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/*-------------------------------------------- */
+body {                              /*boja pozadine*/
+    background-color:darkgrey;    
+}
+
 html,body {
     margin:0;
     padding: 0;    
@@ -17,6 +34,7 @@ html,body {
     margin: 10px auto;
     border: 2px solid black;
     border-radius: 7px 7px 0 0;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,10)
 }
 
 
@@ -26,7 +44,7 @@ html,body {
     color: aliceblue;
     background-color:cadetblue;   
     text-align: right;
-    font-size: 90px;
+    font-size: 86px;
     overflow: hidden;
     white-space: normal;
     border-radius: 7px 7px 0 0;
@@ -44,8 +62,15 @@ html,body {
     text-align: center;
     background-color: silver;
     cursor: pointer;
-    padding-top:25px;   
+    padding-top:25px;
+    border-radius: 5px
 }
+
+.tipke_brojke:active, .tipke_operater:active {  /*smanjuju font*/
+    font-size: 2.3em;
+}
+
+
 
 .tipke_brojke:hover {           /* tipke mjenjaju boju kad je mouseover */
     background-color: orange;    
@@ -66,7 +91,12 @@ html,body {
     text-align: center;
     background-color: orange; /*boja pozadine*/
     cursor: pointer;
-    padding-top:25px;   
+    padding-top:25px; 
+    border-radius: 5px
+}
+
+.tipke_operater:hover {           /* tipke mjenjaju boju kad je mouseover */
+    background-color: navajowhite;    
 }
 
 
